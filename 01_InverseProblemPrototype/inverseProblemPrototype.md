@@ -18,12 +18,13 @@ Given
 - a prescribed temperature $u(0,t) = u(L,t) = 0$ at the extremities of the rod;
 
 solve the heat equation
+
 $$
 \left\{
 \begin{array}{ll}
 \frac{\partial u}{\partial t} - k \frac{\partial^2}{\partial x^2} u = 0 & \forall x\,\in\,(0, L)\; \forall t \in (0,T)\\
 u(x, 0) = m(x) & \forall x \in [0,L] \\
-u(0,t) = u(L,t) = 0 & \forall t \in (0, T]\\,
+u(0,t) = u(L,t) = 0 & \forall t \in (0, T],\\
 \end{array}
 \right.
 $$
@@ -241,7 +242,7 @@ plt.show()
 ![png](output_6_0.png)
 
 
-**Note 2**: The functions $v_n$ ($n=1,2,3, \ldots$) form an orthonormal basis of L^2([0,1]). 
+**Note 2**: The functions $v_n$, $n=1,2,3, \ldots$,form an orthonormal basis of L^2([0,1]). 
 
 That is, every function $f \in L^2([0,1])$ can be written as
 $$ f = \sum_{n=1}^\infty \alpha_n v_n, \text{ where } \alpha_n = \int_0^1 f v_n dx.$$
