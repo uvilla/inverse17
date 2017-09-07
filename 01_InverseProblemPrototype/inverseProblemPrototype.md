@@ -35,9 +35,13 @@ $$ \mathcal{F}(m) = u(x, T). $$
 
 #### Analytical solution to the forward problem.
 Verify that if
+
 $$ m(x) = \sin\left(n\, \frac{\pi}{L} x \right), \quad n = 1,2,3, \ldots ,$$
+
 then
+
 $$ u(x,t) = e^{ -k\left(n\, \frac{\pi}{L} \right)^2 t} \sin\left(n\,\frac{\pi}{L} x \right) $$
+
 is the unique solution to the heat equation.
 
 ### Inverse problem
@@ -49,7 +53,9 @@ $$ \mathcal{F}(m) = d. $$
 ### Ill-posedness of the inverse problem
 
 Consider a perturbation
+
 $$ \delta m(x) = \varepsilon \sin\left(n \, \frac{\pi}{L} x \right), $$
+
 where $\varepsilon > 0$ and $n = 1, 2, 3, \ldots$.
 
 Then, by linearity of the forward model $\mathcal{F}$, the corresponding perturbation $\delta d(x) = \mathcal{F}(m + \delta m) - \mathcal{F}(m)$ is
@@ -78,8 +84,11 @@ By letting
 $$ \mathbf{u}(t) = \begin{bmatrix}u_1(t)\\u_2(t)\\ \ldots\\ u_{n_x-1}(t) \end{bmatrix}$$
 
 be the vector collecting the values of the temperature $u$ at the points $x_j = j\,h$, we then write the system of ordinary differential equations (ODEs):
+
 $$ \frac{\partial}{\partial t} \mathbf{u}(t) + K \mathbf{u}(t) = 0,$$
+
 where $K \in \mathbb{R}^{(n_x-1) \times (n_x-1)}$ is the tridiagonal matrix given by
+
 $$ K = \frac{k}{h^2}\begin{bmatrix}  2 & -1 &       &        &        &    \\
                                     -1 &  2 & -1    &        &        &    \\
                                        & -1 &  2    & -1     &        &    \\
@@ -95,6 +104,7 @@ By letting $\mathbf{u}^{(i)} = \mathbf{u}(i\,\Delta t)$ denote the discretized t
 $$ \frac{\mathbf{u}^{(i+1)} - \mathbf{u}^{(i)}}{\Delta t} + K\mathbf{u}^{(i+1)} = 0, \quad \text{for } i=0,1,\ldots, n_t-1.$$
 
 After simple algebraic manipulations and exploiting the initial condition $u(x,0) = m(x)$, we then obtain
+
 $$
 \left\{
 \begin{array}
@@ -103,10 +113,13 @@ $$
 \end{array}
 \right.
 $$
+
 or equivalently
+
 $$ \mathbf{u}^{(i)} = \left( I + \Delta t\, K\right)^{-i} \mathbf{m}.$$
 
 In the code below, the function `assembleMatrix` generates the finite difference matrix $\left( I + \Delta t\, K \right)$ and the function `solveFwd` evaluates the forward model
+
 $$ F\, \mathbf{m} = \left( I + \Delta t\, K\right)^{-n_t}\, \mathbf{m}. $$
 
 
@@ -147,6 +160,7 @@ def solveFwd(m):
 ### A naive solution to the inverse problem
 
 If $\mathcal{F}$ is invertible a naive solution to the inverse problem $\mathcal{F} m = d$ is simply to set
+
 $$ m = \mathcal{F}^{-1} d. $$
 
 The function `naiveSolveInv` computes the solution of the discretized inverse problem $\mathbf{m} = F^{-1} \mathbf{d}$ as
@@ -212,6 +226,7 @@ plt.show()
 ### Why does the naive solution fail?
 
 Let $v_n = \frac{1}{\sqrt{2}} \sin\left( n \, \frac{\pi}{L} x \right)$ with $n=1,2,3, \ldots$, then we have that
+
 $$ \mathcal{F} v_n = \lambda_n v_n, \quad \text{where the eigenvalues } \lambda_n = e^{-kT\left(\frac{\pi}{L} n \right)^2}. $$
 
 **Note 1**:
@@ -246,10 +261,13 @@ plt.show()
 **Note 2**: The functions $v_n$, $n=1,2,3, \ldots$,form an orthonormal basis of L^2([0,1]). 
 
 That is, every function $f \in L^2([0,1])$ can be written as
+
 $$ f = \sum_{n=1}^\infty \alpha_n v_n, \text{ where } \alpha_n = \int_0^1 f v_n dx.$$
 
 Consider now the noisy problem
+
 $$ d = \mathcal{F}m_{\rm true} + \eta, $$
+
 where
 - $d$ is the data (noisy measurements)
 - $\eta$ is the noise: $\eta(x) = \sum_{n=1}^\infty \eta_n v_n(x)$
