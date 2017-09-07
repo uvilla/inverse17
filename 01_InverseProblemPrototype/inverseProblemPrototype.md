@@ -18,15 +18,15 @@ Given
 - a prescribed temperature $u(0,t) = u(L,t) = 0$ at the extremities of the rod;
 
 solve the heat equation
-\begin{equation}
+$$
 \left\{
 \begin{array}{ll}
 \frac{\partial u}{\partial t} - k \frac{\partial^2}{\partial x^2} u = 0 & \forall x\,\in\,(0, L)\; \forall t \in (0,T)\\
 u(x, 0) = m(x) & \forall x \in [0,L] \\
-u(0,t) = u(L,t) = 0 & \forall t \in (0, T],
+u(0,t) = u(L,t) = 0 & \forall t \in (0, T]\\,
 \end{array}
 \right.
-\end{equation}
+$$
 
 and observe the temperature at the final time $T$
 $$ \mathcal{F}(m) = u(x, T). $$
@@ -216,7 +216,7 @@ $$ \mathcal{F} v_n = \lambda_n v_n, \quad \text{where the eigenvalues } \lambda_
 - Large eigenvalues $\lambda_n$ corresponds to smooth eigenfunctions $v_n$;
 - Small eigenvalues $\lambda_n$ corresponds to oscillatory eigenfuctions $v_n$.
 
-The figure below shows that the eigenvalues $\lambda_n$ decays extremely fast, that is the matrix $F$ (discretization of the forward model $\mathcal{F}$) is extremely ill conditioned.
+The figure below shows that the eigenvalues $\lambda_n$ decays extremely fast, that is the matrix $F$, discretization of the forward model $\mathcal{F}$, is extremely ill conditioned.
 
 
 ```python
