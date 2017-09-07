@@ -29,7 +29,8 @@ u(0,t) = u(L,t) = 0 & \forall t \in (0, T],\\
 \right.
 $$
 
-and observe the temperature at the final time $T$
+and observe the temperature at the final time $T$:
+
 $$ \mathcal{F}(m) = u(x, T). $$
 
 #### Analytical solution to the forward problem.
