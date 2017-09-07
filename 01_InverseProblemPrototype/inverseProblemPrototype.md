@@ -1,4 +1,7 @@
-
+---
+title: An illustrative example
+use_math: true
+---
 # An illustrative example
 
 ## 1D Inverse Heat Equation
