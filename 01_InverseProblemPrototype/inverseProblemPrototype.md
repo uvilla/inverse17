@@ -290,7 +290,7 @@ $$ m \approx \sum_{n=1}^{\infty} \omega(\lambda_n^2)\, \lambda_n^{-1}\, \delta_n
 
 where
 
-- $\delta_n = \int_0^1 d(x) \, v_n(x) \, dx$ denotes the coefficients of the data $d$ in the basis $\{ v_n \}_{n=1}^\infty$;
+- $\delta_n = \int_0^1 d(x) \, v_n(x) \, dx$ denotes the coefficients of the data $d$ in the basis $\left\{ v_n \right\}_{n=1}^\infty$;
 - $\omega( \lambda_n^2)$ is a filter function that allows to drop/stabilize the terms corresponding to small $\lambda_n$.
 
 #### Truncated Singular Value Decomposition:
