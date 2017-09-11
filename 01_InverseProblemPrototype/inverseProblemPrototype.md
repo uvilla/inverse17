@@ -258,7 +258,7 @@ plt.show()
 ![png](output_6_0.png)
 
 
-**Note 2**: The functions $v_n$, $n=1,2,3, \ldots$,form an orthonormal basis of L^2([0,1]). 
+**Note 2**: The functions $v_n$, $n=1,2,3, \ldots$,form an orthonormal basis of $L^2([0,1])$. 
 
 That is, every function $f \in L^2([0,1])$ can be written as
 
