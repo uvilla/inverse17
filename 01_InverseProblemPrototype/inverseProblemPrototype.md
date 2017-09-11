@@ -1,5 +1,6 @@
 ---
 title: An illustrative example
+layout: default
 use_math: true
 ---
 # An illustrative example

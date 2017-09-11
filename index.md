@@ -1,5 +1,6 @@
 ---
-Title: Home
+title: Home
+layout: default
 use_mathjax: false
 ---
 
