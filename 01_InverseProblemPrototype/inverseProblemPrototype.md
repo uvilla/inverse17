@@ -376,7 +376,7 @@ plt.title("Filters")
 plt.show()
 
 # Compute TSVD and Tikh sol
-lmbda_inv = np.zeros_like(lmbda)**(-1)
+lmbda_inv = np.zeros_like(lmbda)
 lmbda_inv[lmbda >= np.sqrt(alpha)] = lmbda[lmbda >= np.sqrt(alpha)]**(-1)
 m_tsvd = np.dot(U, lmbda_inv*np.dot(U.T, d))
 
