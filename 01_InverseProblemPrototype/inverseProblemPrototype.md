@@ -226,7 +226,7 @@ plt.show()
 
 ### Why does the naive solution fail?
 
-Let $v_n = \frac{1}{\sqrt{2}} \sin\left( n \, \frac{\pi}{L} x \right)$ with $n=1,2,3, \ldots$, then we have that
+Let $v_n = \sqrt{\frac{2}{L}} \sin\left( n \, \frac{\pi}{L} x \right)$ with $n=1,2,3, \ldots$, then we have that
 
 $$ \mathcal{F} v_n = \lambda_n v_n, \quad \text{where the eigenvalues } \lambda_n = e^{-kT\left(\frac{\pi}{L} n \right)^2}. $$
 
