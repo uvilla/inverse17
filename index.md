@@ -8,4 +8,4 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 
 - [Inverse problem prototype](01_InverseProblemPrototype/inverseProblemPrototype.html): An illustrative example of an ill-posed inverse problem ([.ipynb](01_InverseProblemPrototype/inverseProblemPrototype.ipynb)).
 
-See [here](https://jupyter.readthedocs.io/en/latest/running.html#running) for instructions on how to use ipython notebooks (files *.ipynb). 
+See [here](https://jupyter.readthedocs.io/en/latest/running.html#running) for instructions on how to use jupyther notebooks (files *.ipynb). 
