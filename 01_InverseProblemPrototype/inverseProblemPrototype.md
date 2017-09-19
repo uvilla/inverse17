@@ -193,7 +193,7 @@ nt = 100
 
 noise_std_dev = 1e-4
 
-h = L/float(nx+1)
+h = L/float(nx)
 dt = T/float(nt)
 
 x = np.linspace(0.+h, L-h, nx-1) #place nx-1 equispace point in the interior of [0,L] interval
