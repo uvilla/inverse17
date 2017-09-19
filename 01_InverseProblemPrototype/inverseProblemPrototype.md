@@ -350,7 +350,7 @@ nt = 100
 
 noise_std_dev = 0.0#1e-3
 
-h = L/float(nx+1)
+h = L/float(nx)
 dt = T/float(nt)
 
 ## Compute the data d by solving the forward model
