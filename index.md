@@ -13,4 +13,6 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 	- [Convergence Rates](02_IntroToFenics/ConvergenceRates.html): Convergence rates of the finite element method for the Poisson equation in 1D ([.ipynb](02_IntroToFenics/ConvergenceRates.ipynb)).
 	- [Poisson2D](02_IntroToFenics/Poisson2D.html): Finite element solution of the Poisson equation in 2D ([.ipynb](02_IntroToFenics/Poisson2D.ipynb)).
 
-See [here](https://jupyter.readthedocs.io/en/latest/running.html#running) for instructions on how to use ipython notebooks (files *.ipynb). 
+
+See [here](https://jupyter.readthedocs.io/en/latest/running.html#running) for instructions on how to use jupyther notebooks (files *.ipynb). 
+
