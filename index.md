@@ -12,7 +12,8 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 	- [Poisson1D](02_IntroToFenics/Poisson1D.html): Finite element solution of the Poisson equation in 1D ([.ipynb](02_IntroToFenics/Poisson1D.ipynb)).
 	- [Convergence Rates](02_IntroToFenics/ConvergenceRates.html): Convergence rates of the finite element method for the Poisson equation in 1D ([.ipynb](02_IntroToFenics/ConvergenceRates.ipynb)).
 	- [Poisson2D](02_IntroToFenics/Poisson2D.html): Finite element solution of the Poisson equation in 2D ([.ipynb](02_IntroToFenics/Poisson2D.ipynb)).
-	
+
+
 - [Spectrum of Hessian operator](03_HessianSpectrum/HessianSpectrum.html): This notebook illustrates the spectral properties of the preconditioned Hessian misfit operator ([.ipynb](03_HessianSpectrum/HessianSpectrum.ipynb)). This notebook requires [hIPPYlib](https://hippylib.github.io).
 
 
