@@ -6,6 +6,8 @@ use_math: false
 
 This page collects the *Jupyter notebook* used for the graduate course on [**Computational and Variational Methods for Inverse Problems**](https://piazza.com/utexas/fall2017/geo391cse397me397ori397/home), taught by Prof. Ghattas at UT Austin in the Fall 2017 semester.
 
+### Notebooks
+
 - [Inverse problem prototype](01_InverseProblemPrototype/inverseProblemPrototype.html): An illustrative example of an ill-posed inverse problem ([.ipynb](01_InverseProblemPrototype/inverseProblemPrototype.ipynb)).
 
 - Introduction to FEniCS:
@@ -18,6 +20,7 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 
 - [Unconstrained Minimization](04_UnconstrainedMinimization/UnconstrainedMinimization.html): This notebook illustrates the  minimization of a non-quadratic energy functional using Netwon Method ([.ipynb](04_UnconstrainedMinimization/UnconstrainedMinimization.ipynb)).
 
+### Instructions
 
 See [here](fenics_getting_started.pdf) for a list of introductory material to FEniCS and installation guidelines.
 
