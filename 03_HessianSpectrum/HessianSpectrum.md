@@ -22,9 +22,9 @@ $$
 
 Here:
 
-- $u_d$ is a $n_{\rm obs}$ finite dimensional vector that denotes noisy observations of the state $u$ in $n_{\rm obs}$ locations $\mathbf{x}_i$, $i=1,\ldots,n_{\rm obs}$. Specifically, $u_d(i) = u_{\rm true}( {\bf x}_i ) + \eta_i$, where $\eta_i$ are i.i.d. $\mathcal{N}(0, \sigma^2)$.
+- $u_d$ is a $n_{\rm obs}$ finite dimensional vector that denotes noisy observations of the state $u$ in $$n_{\rm obs}$$ locations $$\mathbf{x}_i$$, $$i=1,\ldots,n_{\rm obs}$$. Specifically, $$u_d(i) = u_{\rm true}( {\bf x}_i ) + \eta_i$$, where $$\eta_i$$ are i.i.d. $$\mathcal{N}(0, \sigma^2)$$.
 
-- $B: H^1_0(\Omega) \rightarrow {R}^{n_{\rm obs}}$ is the linear operator that evaluates the state $u$ at the observation locations $\mathbf{x}_i$, $i=1,\ldots,n_{\rm obs}$.
+- $$B: H^1_0(\Omega) \rightarrow {R}^{n_{\rm obs}}$$ is the linear operator that evaluates the state $u$ at the observation locations $$\mathbf{x}_i$$, $$i=1,\ldots,n_{\rm obs}$$.
 
 - $\delta$ and $\gamma$ are the parameters of the regularization penalizing the $L^2(\Omega)$ and $H^1(\Omega)$ norm of $m-m_0$, respectively.
 
