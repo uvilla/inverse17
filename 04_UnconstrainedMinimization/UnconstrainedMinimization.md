@@ -137,9 +137,9 @@ We construct a triangulation (mesh) $\mathcal{T}_h$ of the computational domain 
 
 On the mesh $\mathcal{T}_h$, we then define the finite element space $V_h \subset H^1(\Omega)$ consisting of globally continuous piecewise linear functions and we create a function $u \in V_h$.
 
-By denoting by $\left[{\phi_i(x)}\right]_{i=1}^{{dim}(V_h)}$ the finite element basis for the space $V_h$ we have
+By denoting by $\left[{\phi_i(x)}\right]_{i=1}^{dim(V_h)}$ the finite element basis for the space $V_h$ we have
 
-$$ u = \sum_{i=1}^{{\rm dim}(V_h)} {\rm u}_i \phi_i(x), $$
+$$ u = \sum_{i=1}^{dim(V_h)} {\rm u}_i \phi_i(x), $$
 
 where ${\rm u}_i$ represents the coefficients in the finite element expansion of $u$.
 
