@@ -8,7 +8,7 @@ use_math: true
 
 In this example we solve the following nonlinear minimization problem
 
-*Find * $u^* \in H^1_0(\Omega)$ *such that*
+*Find * $$u^* \in H^1_0(\Omega)$$ *such that*
 
 $$ u^* = \rm{arg}\min_{u \in H^1_0(\Omega)} \Pi(u). $$
 
@@ -41,7 +41,7 @@ $$\frac{\Pi(u + \varepsilon \hat{u}) - \Pi(u)}{\epsilon} = \int_\Omega \left[k_2
 
 By neglecting the $\mathcal{O}(\epsilon)$ terms, we write the weak form of the necessary conditions as
 
-*Find *$u\in H_0^1(\Omega)$ *such that*
+*Find * $$u\in H_0^1(\Omega)$$ *such that*
 
 $$ \int_\Omega \left[k_2 u \hat{u} \nabla u \cdot \nabla u + (k_1 + k_2u^2)\nabla \hat{u}\cdot \nabla u\right] dx = \int_\Omega f \hat{u} dx \quad \forall \hat{u} \in H_0^1.$$
 
@@ -86,7 +86,7 @@ $$\delta^2 \Pi(u, \tilde{u}, \hat{u}) := \frac{d}{d\varepsilon} \delta_u \Pi(u+\
 \int_\Omega \left[k_2\tilde{u}\hat{u}\nabla u \cdot \nabla u + 2k_2 u \hat{u} \nabla \tilde{u} \cdot \nabla u + 2k_2 u \tilde{u} \nabla \hat{u} \cdot \nabla u + (k_1 + k_2u^2) \nabla \hat{u} \cdot \nabla \tilde{u} \right] dx. $$
 
 ### Weak form of Newton step:
-*Given *$u \in H_0^1$, *find * $\tilde{u} \in H^1_0$ *such that*
+*Given * $$u \in H_0^1$$, *find * $\tilde{u} \in H^1_0$ *such that*
 
 $$\int_\Omega \left[k_2\tilde{u}\hat{u}\nabla u \cdot \nabla u + 2k_2 u \hat{u} \nabla \tilde{u} \cdot \nabla u + 2k_2 u \tilde{u} \nabla \hat{u} \cdot \nabla u + (k_1 + k_2u^2) \nabla \hat{u} \cdot \nabla \tilde{u} \right] dx = - \int_\Omega \left[k_2 u \hat{u} \nabla u \cdot \nabla u + (k_1 + k_2u^2)\nabla \hat{u}\cdot \nabla u -f \hat{u} \right] dx \quad \forall \, \hat{u} \in H_0^1. $$
 
@@ -173,13 +173,13 @@ We now define the energy functional
 
 $$ \Pi(u) = \frac{1}{2} \int_\Omega (k_1 + k_2u^2) \nabla u \cdot \nabla u dx - \int_\Omega f\,u dx.$$
 
-The parameters $k_1$, $k_2$ and the forcing term $f$ are defined in FEniCS using the keyword [`Constant`](http://fenicsproject.org/documentation/dolfin/1.6.0/python/programmers-reference/functions/constant/Constant.html). To define coefficients that are space dependent one should use the keyword [`Expression`](http://fenicsproject.org/documentation/dolfin/1.6.0/python/programmers-reference/functions/expression/Expression.html).
+The parameters $k_1$, $k_2$ and the forcing term $f$ are defined in FEniCS using the keyword [`Constant`](https://fenicsproject.org/olddocs/dolfin/2016.2.0/python/programmers-reference/functions/constant/Constant.html). To define coefficients that are space dependent one should use the keyword [`Expression`](https://fenicsproject.org/olddocs/dolfin/2016.2.0/python/programmers-reference/functions/expression/Expression.html).
 
 The Dirichlet boundary condition
 
 $$ u = 0 \quad {\rm on} \; \partial\Omega$$
 
-is imposed using the [`DirichletBC`](http://fenicsproject.org/documentation/dolfin/1.6.0/python/programmers-reference/fem/bcs/DirichletBC.html) class.
+is imposed using the [`DirichletBC`](https://fenicsproject.org/olddocs/dolfin/2016.2.0/python/programmers-reference/fem/bcs/DirichletBC.html) class.
 
 To construct this object we need to provide
 
@@ -222,7 +222,7 @@ $$ r := \left| \frac{\Pi(u_0 + \varepsilon \hat{u}) - \Pi(u_0)}{\varepsilon} - \
 
 In the figure below we show in a loglog scale the value of $r$ as a function of $\varepsilon$. We observe that $r$ decays linearly for a wide range of values of $\varepsilon$, however we notice an increase in the error for extremely small values of $\varepsilon$ due to numerical stability and finite precision arithmetic.
 
-**NOTE:** To compute the first variation we can also use the [automatic differentiation](http://fenicsproject.org/documentation/dolfin/1.6.0/python/programmers-reference/fem/formmanipulations/derivative.html) of variational forms capabilities of FEniCS and write
+**NOTE:** To compute the first variation we can also use the [symbolic differentiation](https://fenicsproject.org/olddocs/dolfin/2016.2.0/python/programmers-reference/fem/formmanipulations/derivative.html) of variational forms capabilities of FEniCS and write
 
 `grad = derivative(Pi, u, u_hat)`
 
@@ -418,7 +418,7 @@ for i in range(max_iter):
 
 ## 7. The built-in non-linear solver in FEniCS
 
-As an alternative, we can resort to the [built-in non-linear solver](http://fenicsproject.org/documentation/dolfin/1.6.0/python/programmers-reference/fem/solving/solve.html) in FEniCS.
+As an alternative, we can resort to the [built-in non-linear solver](https://fenicsproject.org/olddocs/dolfin/2016.2.0/python/programmers-reference/fem/solving/solve.html) in FEniCS.
 
 To this aim, we use the necessary optimality condition and we cast the minimization problem in a non-linear variational problem.
 More specifically, we set first variation $\delta_u \Pi(u,\hat{u})$ of the energy functional to zero.
