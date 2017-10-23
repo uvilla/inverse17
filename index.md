@@ -16,6 +16,8 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 
 - [Spectrum of Hessian operator](03_HessianSpectrum/HessianSpectrum.html): This notebook illustrates the spectral properties of the preconditioned Hessian misfit operator ([.ipynb](03_HessianSpectrum/HessianSpectrum.ipynb)). This notebook requires [hIPPYlib](https://hippylib.github.io).
 
+- [Unconstrained Minimization](04_UnconstrainedMinimization/UnconstrainedMinimization.html): This notebook illustrates the  minimization of a non-quadratic energy functional using Netwon Method ([.ipynb](04_UnconstrainedMinimization/UnconstrainedMinimization.ipynb)).
+
 
 See [here](fenics_getting_started.pdf) for a list of introductory material to FEniCS and installation guidelines.
 
