@@ -61,13 +61,14 @@ $$ u = 0 \quad {\rm on} \; \partial\Omega.$$
 Consider the expansion of the first variation $\delta_u \Pi(u, \hat{u})$ about $u$ in a *direction* $\tilde{u}$
 
 $$\delta_u \Pi(u+\tilde{u}, \hat{u}) \approx \delta_u \Pi(u, \hat{u}) + \delta_u^2\Pi(u, \hat{u}, \tilde{u}),$$
+
 where
 
 $$ \delta_u^2\Pi(u, \hat{u}, \tilde{u}) = \left. \frac{d}{d\varepsilon} \delta_u \Pi(u + \varepsilon \tilde{u}, \hat{u}) \right|_{\varepsilon=0}.$$
 
 The infinite-dimensional Newton's method reads
 
-*Given the current solution $u_k$, *find* $\tilde{u} \in H^1_0$ such that*
+*Given the current solution $u_k$, find $\tilde{u} \in H^1_0$ such that*
 
 $$ \delta_u^2 \Pi(u_k, \hat{u}, \tilde{u}) = -\delta_u \Pi(u_k, \hat{u}) \quad \forall \, \hat{u} \in H_0^1.$$
 
@@ -320,7 +321,7 @@ plt.legend(loc = "upper left")
 
 The infinite dimensional Newton step reads
 
-*Given *$u_n \in H_0^1$, *find * $\tilde{u} \in H^1_0$ *such that*
+*Given $u_n \in H_0^1$, find  $\tilde{u} \in H^1_0$ such that*
 
 $$ \delta_u^2 \Pi(u_n, \hat{u}, \tilde{u}) =  - \delta_u \Pi(u_n, \hat{u}) \quad $$
 
