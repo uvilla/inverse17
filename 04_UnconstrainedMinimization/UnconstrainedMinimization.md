@@ -20,7 +20,7 @@ where
 
 $$k(u) = k_1 + k_2 u^2. $$
 
-##Necessary condition (Euler-Lagrange condition)
+## Necessary condition (Euler-Lagrange condition)
 
 Let $\delta_u \Pi(u, \hat{u})$ denote the first variation of $\Pi(u)$ in the *direction* $\hat{u}$, i.e.
 
@@ -30,7 +30,7 @@ The necessary condition is that the first variation of $\Pi(u)$ equals to 0 for 
 
 $$ \delta_u \Pi = 0 \Longleftrightarrow \lim_{\varepsilon \rightarrow 0} \frac{\Pi(u + \varepsilon \hat{u}) - \Pi(u)}{\varepsilon} = 0 \quad \forall \hat{u} \in H_0^1(\Omega).$$.
 
-###Weak form:
+### Weak form:
 To obtain the weak form of the above necessary condition, we first expand the term $\Pi(u + \varepsilon \hat{u})$ as
 
 $$\Pi(u + \varepsilon \hat{u}) = \frac{1}{2} \int_\Omega [k_1 + k_2(u + \varepsilon\hat{u})^2](\nabla u + \varepsilon \nabla \hat{u})\cdot(\nabla u + \varepsilon \nabla \hat{u}) dx - \int_\Omega f\,(u+\varepsilon\hat{u}) dx.$$
@@ -45,7 +45,7 @@ By neglecting the $\mathcal{O}(\epsilon)$ terms, we write the weak form of the n
 
 $$ \int_\Omega \left[k_2 u \hat{u} \nabla u \cdot \nabla u + (k_1 + k_2u^2)\nabla \hat{u}\cdot \nabla u\right] dx = \int_\Omega f \hat{u} dx \quad \forall \hat{u} \in H_0^1.$$
 
-###Strong form:
+### Strong form:
 To obtain the strong form, we invoke Green's first identity and write
 
 $$ \int_\Omega \left[k_2 u \nabla u \cdot \nabla u -  \nabla \cdot [(k_1 + k_2u^2) \nabla u] \right] \hat{u} dx + \int_{\partial \Omega} [(k_1 + k_2u^2) \nabla u]\cdot n \hat{u} ds = \int_\Omega f \hat{u} dx \quad \forall \hat{u} \in H_0^1.$$
@@ -56,7 +56,7 @@ $$ - \nabla \cdot [(k_1 + k_2u^2) \nabla u + k_2 u \nabla u \cdot \nabla u = f \
 
 $$ u = 0 \quad {\rm on} \; \partial\Omega.$$
 
-##Infinite-dimensional Newton's Method
+## Infinite-dimensional Newton's Method
 
 Consider the expansion of the first variation $\delta_u \Pi(u, \hat{u})$ about $u$ in a *direction* $\tilde{u}$
 
@@ -85,7 +85,7 @@ Then, after some simplification, we obtain
 $$\delta^2 \Pi(u, \tilde{u}, \hat{u}) := \frac{d}{d\varepsilon} \delta_u \Pi(u+\varepsilon\tilde{u}, \hat{u}) = 
 \int_\Omega \left[k_2\tilde{u}\hat{u}\nabla u \cdot \nabla u + 2k_2 u \hat{u} \nabla \tilde{u} \cdot \nabla u + 2k_2 u \tilde{u} \nabla \hat{u} \cdot \nabla u + (k_1 + k_2u^2) \nabla \hat{u} \cdot \nabla \tilde{u} \right] dx. $$
 
-###Weak form of Newton step:
+### Weak form of Newton step:
 *Given *$u \in H_0^1$, *find * $\tilde{u} \in H^1_0$ *such that*
 
 $$\int_\Omega \left[k_2\tilde{u}\hat{u}\nabla u \cdot \nabla u + 2k_2 u \hat{u} \nabla \tilde{u} \cdot \nabla u + 2k_2 u \tilde{u} \nabla \hat{u} \cdot \nabla u + (k_1 + k_2u^2) \nabla \hat{u} \cdot \nabla \tilde{u} \right] dx = - \int_\Omega \left[k_2 u \hat{u} \nabla u \cdot \nabla u + (k_1 + k_2u^2)\nabla \hat{u}\cdot \nabla u -f \hat{u} \right] dx \quad \forall \, \hat{u} \in H_0^1. $$
@@ -96,7 +96,7 @@ $$ u^{\rm new} = u + \alpha \tilde{u}.$$
 
 Here $\alpha$ denotes a relaxation parameter (back-tracking/line-search) used to achieve global convergence of the Newton method.
 
-###Strong form of the Newton step
+### Strong form of the Newton step
 
 $$ - \nabla \cdot \left[ (k_1 + k_2 u^2) \nabla \tilde{u}\right] + 2k_2u\nabla\tilde{u}\cdot\nabla u - \nabla\cdot(2k_2 u \tilde{u} \nabla u) + k_2 \tilde{u} \nabla u \nabla u = \nabla \cdot\left[(k_1 + k_2 u^2)\nabla \right]u - k_2 u \nabla u\cdot \nabla u + f \quad {\rm in} \, \Omega.$$
 
