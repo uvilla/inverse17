@@ -197,7 +197,7 @@ u(0) = 0, \quad \left.\frac{\partial u}{\partial x}\right|_{x=1} = g
 $$
 
 To obtain the weak form, we let $\Omega = (0,1)$ and we define the functional space
-$V = \left\{ v \in H^1(\Omega) | v(0) = 0 \right\}$.
+$$V = \left\{ v \in H^1(\Omega) | v(0) = 0 \right\}$$.
 Then we multiply the strong form by an arbitrary function $v \in V$ and integrate over $\Omega$:
 
 $$ - \int_0^1 \frac{\partial^2 u}{\partial^2 x} v \, dx = \int_0^1 f\,v \, dx, \quad \forall v \in V $$
