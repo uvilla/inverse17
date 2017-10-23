@@ -8,7 +8,7 @@ use_math: true
 
 In this example we solve the following nonlinear minimization problem
 
-*Find * $$u^* \in H^1_0(\Omega)$$ *such that*
+*Find $$u^* \in H^1_0(\Omega)$$ such that*
 
 $$ u^* = \rm{arg}\min_{u \in H^1_0(\Omega)} \Pi(u). $$
 
@@ -41,7 +41,7 @@ $$\frac{\Pi(u + \varepsilon \hat{u}) - \Pi(u)}{\epsilon} = \int_\Omega \left[k_2
 
 By neglecting the $\mathcal{O}(\epsilon)$ terms, we write the weak form of the necessary conditions as
 
-*Find * $$u\in H_0^1(\Omega)$$ *such that*
+*Find $$u\in H_0^1(\Omega)$$ such that*
 
 $$ \int_\Omega \left[k_2 u \hat{u} \nabla u \cdot \nabla u + (k_1 + k_2u^2)\nabla \hat{u}\cdot \nabla u\right] dx = \int_\Omega f \hat{u} dx \quad \forall \hat{u} \in H_0^1.$$
 
@@ -67,7 +67,7 @@ $$ \delta_u^2\Pi(u, \hat{u}, \tilde{u}) = \left. \frac{d}{d\varepsilon} \delta_u
 
 The infinite-dimensional Newton's method reads
 
-*Given the current solution *$u_k$, *find* $\tilde{u} \in H^1_0$ *such that*
+*Given the current solution $u_k$, *find* $\tilde{u} \in H^1_0$ such that*
 
 $$ \delta_u^2 \Pi(u_k, \hat{u}, \tilde{u}) = -\delta_u \Pi(u_k, \hat{u}) \quad \forall \, \hat{u} \in H_0^1.$$
 
@@ -86,7 +86,7 @@ $$\delta^2 \Pi(u, \tilde{u}, \hat{u}) := \frac{d}{d\varepsilon} \delta_u \Pi(u+\
 \int_\Omega \left[k_2\tilde{u}\hat{u}\nabla u \cdot \nabla u + 2k_2 u \hat{u} \nabla \tilde{u} \cdot \nabla u + 2k_2 u \tilde{u} \nabla \hat{u} \cdot \nabla u + (k_1 + k_2u^2) \nabla \hat{u} \cdot \nabla \tilde{u} \right] dx. $$
 
 ### Weak form of Newton step:
-*Given * $$u \in H_0^1$$, *find * $\tilde{u} \in H^1_0$ *such that*
+*Given  $$u \in H_0^1$$, find  $\tilde{u} \in H^1_0$ such that*
 
 $$\int_\Omega \left[k_2\tilde{u}\hat{u}\nabla u \cdot \nabla u + 2k_2 u \hat{u} \nabla \tilde{u} \cdot \nabla u + 2k_2 u \tilde{u} \nabla \hat{u} \cdot \nabla u + (k_1 + k_2u^2) \nabla \hat{u} \cdot \nabla \tilde{u} \right] dx = - \int_\Omega \left[k_2 u \hat{u} \nabla u \cdot \nabla u + (k_1 + k_2u^2)\nabla \hat{u}\cdot \nabla u -f \hat{u} \right] dx \quad \forall \, \hat{u} \in H_0^1. $$
 
@@ -137,7 +137,7 @@ We construct a triangulation (mesh) $\mathcal{T}_h$ of the computational domain 
 
 On the mesh $\mathcal{T}_h$, we then define the finite element space $V_h \subset H^1(\Omega)$ consisting of globally continuous piecewise linear functions and we create a function $u \in V_h$.
 
-By denoting by $\left[{\phi_i(x)}\right]_{i=1}^{dim(V_h)}$ the finite element basis for the space $V_h$ we have
+By denoting by $$\left[{\phi_i(x)}\right]_{i=1}^{dim(V_h)}$$ the finite element basis for the space $V_h$ we have
 
 $$ u = \sum_{i=1}^{dim(V_h)} {\rm u}_i \phi_i(x), $$
 
