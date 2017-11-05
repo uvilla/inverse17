@@ -20,6 +20,8 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 
 - [Unconstrained Minimization](04_UnconstrainedMinimization/UnconstrainedMinimization.html): This notebook illustrates the  minimization of a non-quadratic energy functional using Netwon Method ([.ipynb](04_UnconstrainedMinimization/UnconstrainedMinimization.ipynb)).
 
+- [Poisson SD](05_Poisson_SD/Poisson_SD.html): This notebook illustrates the use of FEniCS for solving an inverse problem for the coefficient field of a Poisson equation, using the steepest descent method  ([.ipnb](05_Poisson_SD/Poisson_SD.ipynb)). *Note that SD is a poor choice of optimization method for this problem*; it is provided here in order to compare with Newton's method, which we'll be using later in the class.
+
 ### Instructions
 
 See [here](fenics_getting_started.pdf) for a list of introductory material to FEniCS and installation guidelines.
