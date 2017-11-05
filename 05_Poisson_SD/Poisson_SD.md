@@ -1,5 +1,10 @@
+---
+title: Poisson SD
+layout: default
+use_math: true
+---
 
-# Example: Coefficient field inversion in an elliptic partial differential equation
+# Coefficient field inversion in an elliptic partial differential equation
 
 We consider the estimation of a coefficient in an elliptic partial
 differential equation as a first model problem. Depending on the
