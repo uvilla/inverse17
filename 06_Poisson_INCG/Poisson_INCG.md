@@ -42,7 +42,7 @@ $$(u,v) := \int_\Omega u(x) v(x) \,dx.$$
 
 ### Gradient evaluation:
 
-The Lagrangian functional $\mathscr{L}:H^1(\Omega)\times H_0^1(\Omega)\times H_0^1(\Omega)\rightarrow \mathbb{R}$ is given by
+The Lagrangian functional $\mathscr{L}:H_0^1(\Omega)\times H^1(\Omega)\times H_0^1(\Omega)\rightarrow \mathbb{R}$ is given by
 
 $$
 \mathscr{L}(u,m,p):= \frac{1}{2}(u-u_d,u-u_d) +
@@ -127,24 +127,24 @@ $
 $
 
 $
-\def\bu{{\bf u}}
-\def\bm{{\bf m}}
-\def\bp{{\bf p}}
-\def\btu{{\bf \tilde u}}
-\def\btm{{\bf \tilde m}}
-\def\btp{{\bf \tilde p}}
-\def\bhu{{\bf \hat u}}
-\def\bhm{{\bf \hat m}}
-\def\bhp{{\bf \hat p}}
-\def\bg{{\bf g}}
+\def\bu{ {\bf u} }
+\def\bm{ {\bf m} }
+\def\bp{ {\bf p} }
+\def\btu{ {\bf \tilde u} }
+\def\btm{ {\bf \tilde m} }
+\def\btp{ {\bf \tilde p} }
+\def\bhu{ {\bf \hat u} }
+\def\bhm{ {\bf \hat m} }
+\def\bhp{ {\bf \hat p} }
+\def\bg{ {\bf g} }
 $
 
 $
-\def\bA{{\bf A}}
-\def\bC{{\bf C}}
-\def\bH{{\bf H}}
-\def\bR{{\bf R}}
-\def\bW{{\bf W}}
+\def\bA{ {\bf A} }
+\def\bC{ {\bf C} }
+\def\bH{ {\bf H} }
+\def\bR{ {\bf R} }
+\def\bW{ {\bf W} }
 $
 
 Let us denote the vectors corresponding to the discretization of the functions $u_k, m_k, p_k$ by $\bu_k, \bm_k, \bp_k$ and of the functions $\hu_k, \hm_k, \hp_k$ by $\bhu_k, \bhm_k,\bhp_k$.
