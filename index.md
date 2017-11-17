@@ -22,6 +22,8 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 
 - [Poisson SD](05_Poisson_SD/Poisson_SD.html): This notebook illustrates the use of FEniCS for solving an inverse problem for the coefficient field of a Poisson equation, using the steepest descent method  ([.ipnb](05_Poisson_SD/Poisson_SD.ipynb)). *Note that SD is a poor choice of optimization method for this problem*; it is provided here in order to compare with Newton's method, which we'll be using later in the class.
 
+- [Poisson INCG](06_Poisson_INCG/Poisson_INCG.html): This notebook illustrates the use of FEniCS for solving an inverse problem for the coefficient field of a Poisson equation, using the inexact Newton CG method  ([.ipnb](06_Poisson_INCG/Poisson_INCG.ipynb)). This notebook requires [hIPPYlib](https://hippylib.github.io).
+
 ### Instructions
 
 See [here](fenics_getting_started.pdf) for a list of introductory material to FEniCS and installation guidelines.
