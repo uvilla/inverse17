@@ -124,9 +124,6 @@ $
 \def\hu{\hat u}
 \def\hp{\hat p}
 \def\hm{\hat m}
-$
-
-$
 \def\bu{ {\bf u} }
 \def\bm{ {\bf m} }
 \def\bp{ {\bf p} }
@@ -137,9 +134,6 @@ $
 \def\bhm{ {\bf \hat m} }
 \def\bhp{ {\bf \hat p} }
 \def\bg{ {\bf g} }
-$
-
-$
 \def\bA{ {\bf A} }
 \def\bC{ {\bf C} }
 \def\bH{ {\bf H} }
@@ -171,7 +165,7 @@ where $\bA_k^T \bp_k$ stems from the discretization of $(\exp(m_k)\nabla \tilde{
 
 - Define the gradient 
 
-$$ \bg_k = \bR \bm_k + \bC_k^T \bp_k, $$
+$$ \bg_k = \bR \bhm_k + \bC_k^T \bp_k, $$
 
 where $\bR$ is the matrix stemming from discretization of the regularization operator $\gamma ( \nabla \hat{m}, \nabla \tilde{m})$, and $\bC_k$ stems from discretization of the term $(\tilde{m}\exp(m_k)\nabla u_k, \nabla p_k)$.
 
@@ -333,7 +327,7 @@ bc_adj.apply(noise)
 ud.vector().axpy(1., noise)
 
 # plot
-nb.multi1_plot([utrue, ud], ["State solution with atrue", "Synthetic observations"])
+nb.multi1_plot([utrue, ud], ["State solution with mtrue", "Synthetic observations"])
 plt.show()
 ```
 
