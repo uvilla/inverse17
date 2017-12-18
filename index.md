@@ -24,6 +24,11 @@ This page collects the *Jupyter notebook* used for the graduate course on [**Com
 
 - [Poisson INCG](06_Poisson_INCG/Poisson_INCG.html): This notebook illustrates the use of FEniCS for solving an inverse problem for the coefficient field of a Poisson equation, using the inexact Newton CG method  ([.ipynb](06_Poisson_INCG/Poisson_INCG.ipynb)). This notebook requires [hIPPYlib](https://hippylib.github.io).
 
+- [Poisson Bayesian](07_PoissonBayesian/PoissonBayesian.html): This notebook illustrates how to solve a non-linear parameter inversion for the Poisson equation in a Bayesian setting using hIPPYlib ([.ipynb](07_PoissonBayesian/PoissonBayesian.ipynb)).
+
+- [Advection Diffusion Bayesian](08_AddDivBayesian/AddDivBayesian.html): This notebook illustrates how to solve a time-dependent linear inverse problem in a Bayesian setting using hIPPYlib ([.ipynb](08_AddDivBayesian/AddDivBayesian.ipynb), [meshfile](08_AddDivBayesian/ad_20.xml)).
+
+
 ### Instructions
 
 See [here](fenics_getting_started.pdf) for a list of introductory material to FEniCS and installation guidelines.
